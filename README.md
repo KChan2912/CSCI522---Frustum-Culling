@@ -16,3 +16,6 @@ We need to create Axis Aligned Bounding Boxes for our meshes, and use it to chec
 **Checking whether an object should be culled out:**
 
 Within *SH_Draw.cpp*, within the method *do_GATHER_DRAWCALLS* (which is responsible for sending objects to be rendered) check whether all of the points of the Axis Aligned Bounding Box are outside of the plane or not. Simply check whether the dot product of the plane’s normal with the vector pointing from the camera to the point of the AABB is negative (or positive, depending on your plane normal’s orientation).
+
+
+https://github.com/user-attachments/assets/09c2c582-3037-4c02-a731-95cbf868217b
